@@ -97,7 +97,7 @@ labels.remove('o')
 
 
 dl_test=Data_Load('test',pipeline,dep_type2id,pos_tag2id)
-matrix_test,word2id_test,id2word_test,X_dummy_test,Y_test,files_len_list_test=dl_test.get_X_Y(int(int(doc_num)/5))
+matrix_test,word2id_test,id2word_test,X_dummy_test,Y_test,files_len_list_test=dl_test.get_X_Y(int(int(doc_num)/3))
 final_X_test=utils.chunk_data_into_torch(matrix_test,files_len_list_test)
 y_test=utils.chunk_data_into_torch(Y_test,files_len_list_test)
 X_test=[]
@@ -106,7 +106,7 @@ for j in range(len(final_X_test)):
 
 
 dl_dev=Data_Load('dev',pipeline,dep_type2id,pos_tag2id)
-matrix_dev,word2id_dev,id2word_dev,X_dummy_dev,Y_dev,files_len_list_dev=dl_dev.get_X_Y(int(int(doc_num)/5))
+matrix_dev,word2id_dev,id2word_dev,X_dummy_dev,Y_dev,files_len_list_dev=dl_dev.get_X_Y(int(int(doc_num)/3))
 final_X_dev=utils.chunk_data_into_torch(matrix_dev,files_len_list_dev)
 y_dev=utils.chunk_data_into_torch(Y_dev,files_len_list_dev)
 X_dev=[]
