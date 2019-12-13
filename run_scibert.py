@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.autograd as autograd
 import torch.optim as optim
 
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
