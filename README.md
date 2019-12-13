@@ -53,9 +53,7 @@ To run my code, do "python run_scibert.py x y". x is the total number of trainin
 
 
 
-/////
 
+<\br>
 
-
-
-写reademe也太难了吧，教别人run自己的code这种事情感觉很糟糕，就好像别人马上就知道你写代码水平这么差了。。
+/*写reademe也太难了吧。。*/
